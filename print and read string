@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+   char x[10];
+   
+   printf("Enter the name:");
+   scanf("%s",x);
+   printf("Hi %s",x);
+    
+}
