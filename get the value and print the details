@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+    double avgmark;
+    char section;
+    int stdid;
+    printf("Enter student id:\n,Enetr section:\n,Enter avg mark:\n");
+    scanf("%d %c %lf",&stdid,&section,&avgmark);
+    printf("std id is:%d \n",stdid);
+    printf("section=%c \n",section);
+     printf("avg mark=%lf \n",avgmark);
+    
+}
