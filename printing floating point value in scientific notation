@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    double x=123.45678;
+    printf("%lf\n",x);
+    printf("%e\n",x);
+    printf("%E\n",x);
+
+    return 0;
+}
