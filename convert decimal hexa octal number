@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main()
+{
+    int x=0b11110;
+    printf("dec value=%d\n",x);
+    printf("oct value=%o\n",x);
+    printf("hex value=%x\n",x);
+    return 0;
+}
