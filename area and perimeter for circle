@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    double pi=3.14,radius;
+    printf("Enetr radius:\n");
+    scanf("%lf",&radius);
+    printf("area=%lf\n",pi*radius*radius);
+    printf("perimeter=%lf\n",2*pi*radius);
+    return 0;
+}
