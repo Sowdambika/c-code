@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <float.h>
+
+int main()
+{
+printf("float min value is:%f\n",FLT_MIN);
+    printf("float max value is:%f\n",FLT_MAX);
+    printf("DOUBLE min value is:%lf\n",DBL_MIN);
+    printf("DOUBLE max value is:%lf\n",DBL_MAX);
+}
