@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <limits.h>
+
+int main()
+{
+    printf("short short int min value is:%hd\n",SHRT_MIN);
+    printf("short short int max value is:%hd\n",SHRT_MAX);
+    printf("int max value is:%d\n",INT_MAX);
+    printf("int min value is:%d\n",INT_MIN);
+    printf("unsingned int max value is:%u\n",UINT_MAX);
+    printf("Long int max value is:%ld\n",LONG_MAX);
+    printf("LOng int min value is:%ld\n",LONG_MIN);
+    printf("Unsingned int max value is:%lu\n",ULONG_MAX);
+    printf("LOng Long int max value is:%lld\n",LLONG_MAX);
+    printf("Long long int min value is:%lld\n",LLONG_MIN);
+    printf("unsingned long long int max value is:%llu\n",ULLONG_MAX);
+    return 0;
+}
