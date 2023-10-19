@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int maths,chemistry,physics;
+    printf("enter marks for maths: ");
+    scanf("%d",&maths);
+    printf("enter marks for physics: ");
+    scanf("%d",&physics);
+    printf("enter marks for chemistry: ");
+    scanf("%d",&chemistry);
+    
+    if((maths>=40)&&(physics>=40)&&(chemistry>=40))
+    printf("you are pass");
+    if((maths<40)||(physics<40)||(chemistry<40))
+    printf("you are fail");
+    return 0;
+}
