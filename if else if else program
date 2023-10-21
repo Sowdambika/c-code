@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int mat,phy,che,avrg;
+    
+    printf("Enter 3 subject marks: ");
+    scanf("%d%d%d",&mat,&phy,&che);
+    
+    avrg=(mat+phy+che)/3;
+    printf("avrg mark for 3 subjects is: %d\n",avrg);
+    
+    if(mat<40 || phy<40 || che<40)
+    printf("Fail");
+    else if(avrg>=60)
+    printf("first class");
+    else if(avrg>=50)
+    printf("second class");
+    else
+    printf("third class");
+
+    return 0;
+}
