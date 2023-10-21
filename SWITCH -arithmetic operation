@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int x,y;
+    char operation;
+    
+    printf("enter any operation in +-*/: ");
+    scanf("%c",&operation);
+    
+    printf("Enter 2 numbers: ");
+    scanf("%d%d",&x,&y);
+    
+   switch(operation)
+   {
+        case '+':
+            printf("addition:%d",x+y);
+            break;
+        case '-':
+            printf("subtraction:%d",x-y);
+            break;
+        case '*':
+            printf("multiply:%d",x*y);
+            break;
+        case '/':
+            printf("diviion:%d",x/y);
+            break;
+   }
+    return 0;
+}
