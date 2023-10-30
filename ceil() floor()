@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main()
+{
+  int k=ceil(123.456);
+  int l=floor(123.456);
+  
+  printf("ceil value  is: %d \n",k);
+  printf("floor value is: %d",l);
+}
