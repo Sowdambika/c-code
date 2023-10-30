@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+  double k=sin(90*M_PI/180);
+  double l=cos(30*M_PI/180);
+  double m=tan(45*M_PI/180);
+  double n=sin(0*M_PI/180);
+  
+  printf("sin value is : %lf\n",k);
+  printf("cos value is : %lf\n",l);
+  printf("tan value is : %lf\n",m);
+  printf("sin value is : %lf",n);
+}
