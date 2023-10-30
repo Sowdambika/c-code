@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main()
+{
+  int a,b,c;
+  double k;
+  
+    printf("enter values of a,b,c:");
+    scanf("%d%d%d",&a,&b,&c);
+    k=pow(b,2)-4*a*c;
+    
+    if(k==0)
+    printf("root value  is: %lf \n",(double)-b/(2*a));
+    if(k>0)
+        {
+        printf("root 1 value is: %lf\n",(double)-b+sqrt(k)/(2*a));
+        printf("root 2 value is: %lf\n",(double)-b-sqrt(k)/(2*a));
+        }
+    else
+         {
+        printf("root 1 value is: %lf+i%lf\n",(double)-b/(2*a),sqrt(-k)/(2*a));
+        printf("root 2 value is: %lf-i%lf\n",(double)-b/(2*a),sqrt(-k)/(2*a));
+        }
+}
