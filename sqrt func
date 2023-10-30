@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+   double k = sqrt(100);
+   printf("k is: %lf",k);
+    return 0;
+}
