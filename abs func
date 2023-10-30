@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+int main()
+{
+  int k=abs(-25);
+  int l=abs(25);
+  
+  printf("k is: %d \n",k);
+  printf("k is: %d",l);
+}
