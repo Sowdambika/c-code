@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int phy,che,maths;
+    printf("enter 3 subject marks: \n");
+    scanf("%d%d%d",&phy,&che,&maths);
+    if(phy>=40 && che>=40 && maths>=40)
+    {
+        printf("result is pass\n");
+        int total=phy+che+maths;
+        float avg=(total)/3;
+        
+        if(avg>=60)
+        printf("You are in first division\n");
+        else if(avg>=50)
+        printf("You are in second division\n");
+        else
+        printf("You are in third division\n");
+    }
+    else{
+        printf("result is fail\n");
+    }
+
+    return 0;
+}
