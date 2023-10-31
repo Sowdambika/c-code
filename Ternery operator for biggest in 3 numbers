@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c,big;
+    printf("enter 3 number: \n");
+    scanf("%d%d%d",&a,&b,&c);
+    if(a>b)
+    {
+        big=(a>c)?a:c;
+    }
+    else{
+         big=(b>c)?b:c;
+    }
+    printf("biggest number is :%d",big);
+    return 0;
+}
