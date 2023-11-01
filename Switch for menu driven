@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    printf("choices are:\n 1.withdraw \n 2.deposit \n 3.check balance \n 4. ministatement \n");
+    printf("Enter your choice: \n");
+    scanf("%d",&n);
+    
+    switch(n)
+    {
+        case 1:
+        printf("Perform withdraw");
+        break;
+        
+        case 2:
+        printf("Perform deposit");
+        break;
+        
+        case 3:
+        printf("Perform check balance");
+        break;
+        
+        case 4:
+        printf("Perform mini statement");
+        break;
+
+        default:
+        printf("invalid number");
+        
+    }
+    return 0;
+}
