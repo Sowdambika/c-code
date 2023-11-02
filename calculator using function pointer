@@ -1,0 +1,94 @@
+
+*******************************************************************************/
+#include <stdio.h>
+#include <stdlib.h>
+int addition(int x,int y);
+int subtraction(int x,int y);
+int multiplication(int x,int y);
+int division(int x,int y);
+int modulo(int x,int y);
+void printing_result(int result);
+
+int main()
+{
+    int operation;
+    int a,b;
+    int result;
+    int (*ptr_sum)(int, int);
+    int(*ptr_diff)(int, int);
+    int(*ptr_mult)(int, int);
+    int(*ptr_divi)(int, int);
+    int(*ptr_modulo)(int, int);
+    
+    do
+    {
+    printf("enter any choice\n");
+    printf(" 1.addition \n 2.subtraction \n 3.multiplication \n 4.division\n 5.modulo \n");
+    scanf("%d",&operation);
+    printf("enter two values A and B:");
+    scanf("%d %d",&a,&b);
+    
+   switch(operation)
+   {
+        case 1:
+           ptr_sum =&addition;
+           result = (*ptr_sum)(a, b);
+           printing_result(result);
+           break;
+        case 2:
+            ptr_diff = &subtraction;
+            result = (*ptr_diff)(a, b);
+            printing_result(result);
+            break;
+        case 3:
+            ptr_mult = &multiplication;
+            result = (*ptr_mult)(a, b);
+            printing_result(result);
+            break;
+        case 4:
+            ptr_divi = &division;
+            result = (*ptr_divi)(a, b);
+            printing_result(result);
+            break;
+        case 5:
+            ptr_modulo = &modulo;
+            result = (*ptr_modulo)(a, b);
+            printing_result(result);
+            break;
+        default:
+            printf("invalid number");
+            break;
+   }
+   }while(operation!=5);
+    return 0;
+}
+
+int addition(int x,int y)
+{
+    int result=x+y;
+    return result;
+}
+int subtraction(int x,int y)
+{
+    int result=x-y;
+    return result;
+}
+int multiplication(int x,int y)
+{
+    int result=x*y;
+    return result;
+}
+int division(int x,int y)
+{
+    int result=x/y;
+    return result;
+}
+int modulo(int x,int y)
+{
+    int result=x%y;
+    return result;
+}
+void printing_result(int result)
+{
+    printf("result is: %d\n",result);
+}
