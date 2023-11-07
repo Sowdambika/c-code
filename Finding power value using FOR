@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    double x,y,r,i;
+    printf("enter number value:");
+    scanf("%lf",&x);
+    printf("enter power value:");
+    scanf("%lf",&y);
+    r=1;
+    
+    for(int i=1;i<=y;i++)
+    
+        r=r*x;
+        printf("result of %lf and %lf is :%lf",x,y,r);
+}
