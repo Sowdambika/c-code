@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main()
+{
+    int x[10],n,i,min,max;
+    printf("enter number of elements in array:");
+    scanf("%d",&n);
+    printf("enter x array of elements:");
+        for(i=0;i<n;i++)
+            scanf("%d",&x[i]);
+                max=x[0];
+                min=x[0];
+                    for(i=1;i<n;i++)
+                    {
+                        if(x[i]>max)
+                        max=x[i];
+                        if(x[i]<min)
+                        min=x[i];
+                    }
+    printf("maximum value is: %d\n",max);
+    printf("manimum value is: %d",min);
+
+    return 0;
+}
