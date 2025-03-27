@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int *ptr = &x;  // Pointer storing the address of x
+
+    printf("Value of x: %d\n", x);
+    printf("Address of x: %p\n", &x);
+    printf("Value stored in ptr (Address of x): %p\n", ptr);
+    printf("Value pointed to by ptr: %d\n", *ptr);  // Dereferencing the pointer
+
+    return 0;
+}
