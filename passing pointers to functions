@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void modifyValue(int *num) {
+    *num = 20;  // Modifies original value
+}
+
+int main() {
+    int x = 10;
+    printf("Before: %d\n", x);
+
+    modifyValue(&x);  // Pass address of x
+    printf("After: %d\n", x);
+
+    return 0;
+}
