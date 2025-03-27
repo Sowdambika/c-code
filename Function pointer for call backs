@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+// Function to perform an operation on two numbers
+void executeOperation(int a, int b, int (*operation)(int, int)) {
+    printf("Result: %d\n", operation(a, b));
+}
+
+// Addition function
+int add(int x, int y) {
+    return x + y;
+}
+
+// Multiplication function
+int multiply(int x, int y) {
+    return x * y;
+}
+
+int main() {
+    // Call executeOperation with different functions
+    executeOperation(10, 5, add);      // Callback to add()
+    executeOperation(10, 5, multiply); // Callback to multiply()
+
+    return 0;
+}
