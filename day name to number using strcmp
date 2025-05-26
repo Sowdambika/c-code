@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	char days[20];
+	printf("enter day name:");
+	scanf("%s", days);
+
+	if(strcmp(days, "sunday")==0)
+		printf("day number:1\n");
+	else if(strcmp(days, "monday")==0)
+		printf("day number:2\n");
+	else if(strcmp(days, "tuesday")==0)
+		printf("day number:3\n");
+	else if(strcmp(days, "wednesday")==0)
+		printf("day number:4\n");
+	else if(strcmp(days, "thursday")==0)
+		printf("day number:5\n");
+    else if(strcmp(days, "friday")==0)
+    printf("day number:6\n");
+    else if(strcmp(days, "saturday")==0)
+    printf("day number:7\n");
+    else
+    printf("invalid day");
+    return 0;
+}
